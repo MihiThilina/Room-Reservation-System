@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CusDetails" prefHeight="622.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDetailsController">
+   <children>
+      <ImageView fitHeight="865.0" fitWidth="1154.0" layoutY="-136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../interior-modern-hotel-luxury-reception-desk-contemporary-style-copy-space-interior-modern-hotel-reception-106336228.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.1" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="106.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="431.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="106.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="431.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="106.0" layoutY="287.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="431.0" layoutY="287.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="106.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SCREEN" fill="#8f9194" height="40.0" layoutX="431.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <JFXTextField fx:id="txtNic" layoutX="106.0" layoutY="158.0" onAction="#movetoName" prefHeight="37.0" prefWidth="281.0" promptText="    NIC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="431.0" layoutY="158.0" onAction="#movetoConumber" prefHeight="37.0" prefWidth="293.0" promptText="   Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCNumber" layoutX="106.0" layoutY="223.0" onAction="#movetoEmail" prefHeight="37.0" prefWidth="281.0" promptText="   Contact Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="429.0" layoutY="221.0" onAction="#movetoAddres" prefHeight="37.0" prefWidth="293.0" promptText="   Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="106.0" layoutY="287.0" onAction="#movetoRoomNumber" prefHeight="37.0" prefWidth="281.0" promptText="    Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomNumber" layoutX="431.0" layoutY="287.0" onAction="#movetoCheckinDate" prefHeight="37.0" prefWidth="293.0" promptText="   Room Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCheckmate" layoutX="106.0" layoutY="367.0" onAction="#movetoCheckInout" prefHeight="37.0" prefWidth="281.0" promptText="   Check in Date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCheckout" layoutX="431.0" layoutY="363.0" prefHeight="38.0" prefWidth="293.0" promptText="   Check in Out">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue       Ocean          " wrappingWidth="479.13671875">
+         <font>
+            <Font name="Bell MT" size="47.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="77.0" fitWidth="78.0" layoutX="106.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ocean-wave-icon-14.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="70.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   CUSTOMER   DETAILS" wrappingWidth="797.13671875">
+         <font>
+            <Font name="Bell MT Bold" size="39.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="butHome" blendMode="MULTIPLY" buttonType="RAISED" layoutX="868.0" layoutY="17.0" onAction="#moveToHome" prefHeight="42.0" prefWidth="109.0" style="-fx-background-color: #02f744;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" radius="57.38" width="210.52" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="botnet" blendMode="MULTIPLY" buttonType="RAISED" layoutX="1001.0" layoutY="17.0" onAction="#moveToNext" prefHeight="42.0" prefWidth="120.0" style="-fx-background-color: #4908c9;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" radius="57.38" width="210.52" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="ButSave" blendMode="MULTIPLY" buttonType="RAISED" layoutX="668.0" layoutY="429.0" onAction="#saveUpdate" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: #264eff;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" radius="57.38" width="210.52" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

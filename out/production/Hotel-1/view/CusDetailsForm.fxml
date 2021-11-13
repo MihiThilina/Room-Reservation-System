@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CusDetailsForm" prefHeight="632.0" prefWidth="1137.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CusDetailsFormController">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="898.0" fitWidth="1196.0" layoutX="-59.0" layoutY="-352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../191771416.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.21" contrast="0.21" />
+         </effect>
+      </ImageView>
+      <TableView fx:id="tblCusDetails" blendMode="SRC_ATOP" layoutY="291.0" prefHeight="344.0" prefWidth="1135.0">
+        <columns>
+          <TableColumn fx:id="colNic" prefWidth="79.0" text="Nic" />
+          <TableColumn fx:id="colName" prefWidth="188.0" text="Name" />
+            <TableColumn fx:id="colPhoneNo" minWidth="0.0" prefWidth="94.0" text="Phone No" />
+            <TableColumn fx:id="colEmail" prefWidth="166.0" text="Email" />
+            <TableColumn fx:id="colAddress" prefWidth="189.0" text="Address" />
+            <TableColumn fx:id="colRoomNo" prefWidth="103.0" text="Room No" />
+            <TableColumn fx:id="colCheckingDate" prefWidth="167.0" text="Check in Date" />
+            <TableColumn fx:id="colCheckout" minWidth="0.0" prefWidth="151.0" text="Check in Out" />
+        </columns>
+         <effect>
+            <ColorAdjust contrast="-0.38" hue="1.0" saturation="-1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue     Ocean" wrappingWidth="422.13671875">
+         <font>
+            <Font size="62.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="82.0" fitWidth="247.0" layoutX="138.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ocean-wave-icon-14.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="butBack" buttonType="RAISED" layoutX="958.0" layoutY="23.0" onAction="#Backto" opacity="0.66" prefHeight="47.0" prefWidth="138.0" style="-fx-background-color: #00ff4c;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="82.0" layoutX="868.0" layoutY="76.0" rotate="31.0" stroke="BLACK" strokeType="INSIDE" width="82.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.11904761904761904" startY="0.9761904761904762">
+               <stops>
+                  <Stop color="#99a4fc" />
+                  <Stop color="#85ff3a00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="769.0" layoutY="61.0" prefHeight="100.0" prefWidth="341.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.11904761904761904" startY="0.9761904761904762">
+               <stops>
+                  <Stop color="#99a4fc" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
